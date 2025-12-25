@@ -1,0 +1,20 @@
+{
+  "name": "top-10-words-from-essays",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagilaufer1992/top-10-words-from-essays.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagilaufer1992/top-10-words-from-essays/issues"
+  },
+  "homepage": "https://github.com/sagilaufer1992/top-10-words-from-essays#readme",
+  "description": ""
+}
