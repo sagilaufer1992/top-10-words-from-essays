@@ -11,6 +11,7 @@ function extractParagraphs(html) {
         .join(" ");
 }
 export async function readArticle(url) {
+    console.log("url", url)
     const content = (await (extract(url))).content;
     return extractParagraphs(content);
 }

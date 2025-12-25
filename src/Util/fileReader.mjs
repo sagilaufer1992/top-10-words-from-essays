@@ -6,7 +6,7 @@ export async function readFileContent(path) {
 
 export async function readLines(path) {
     const content = await readFileContent(path);
-    return content.split(/\r?\n/);
+    return content.split(/\r?\n/).filter(line => line.length > 0);
 }
 
 
