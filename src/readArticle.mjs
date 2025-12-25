@@ -7,7 +7,8 @@ function extractParagraphs(html) {
     return $("p")
         .map((_, el) => $(el).text().trim())
         .get()
-        .filter(text => text.length > 0);
+        .filter(text => text.length > 0)
+        .join(" ");
 }
 export async function readArticle(url) {
     const content = (await (extract(url))).content;
