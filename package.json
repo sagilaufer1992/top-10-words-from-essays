@@ -17,5 +17,8 @@
     "url": "https://github.com/sagilaufer1992/top-10-words-from-essays/issues"
   },
   "homepage": "https://github.com/sagilaufer1992/top-10-words-from-essays#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@extractus/article-extractor": "^8.0.20"
+  }
 }

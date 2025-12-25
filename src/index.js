@@ -1,4 +1,6 @@
 import {readLines} from './fileReader.mjs'
-const lines = await readLines('data/endg-urls');
+import { extract } from '@extractus/article-extractor'
 
-console.log(lines[0]);
+const lines = await readLines('data/endg-urls');
+const content = await extract(lines[0])
+console.log(content.content);
