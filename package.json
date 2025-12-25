@@ -19,6 +19,7 @@
   "homepage": "https://github.com/sagilaufer1992/top-10-words-from-essays#readme",
   "description": "",
   "dependencies": {
-    "@extractus/article-extractor": "^8.0.20"
+    "@extractus/article-extractor": "^8.0.20",
+    "cheerio": "^1.1.2"
   }
 }
