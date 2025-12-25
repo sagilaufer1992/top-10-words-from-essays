@@ -18,6 +18,7 @@ export class WorkerPool {
         worker.busy = false;
         worker.on("message", (result) => {
             worker.resolve(result);
+            console.log("resolved!")
             worker.busy = false;
             this.runNext();
         });
@@ -26,7 +27,6 @@ export class WorkerPool {
 
     runNext() {
         const task = this.queue.shift();
-        console.log("task", task);
         if (!task) return;
 
         const freeWorker = this.workers.find(w => !w.busy);
